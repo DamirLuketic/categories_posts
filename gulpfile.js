@@ -47,7 +47,7 @@ elixir(function(mix) {
             'libs/jquery.js',
             'libs/metisMenu.js',
             'libs/sb-admin-2.js',
-            'libs/scripts.js'
+            'libs/scripts.js',
 
         ], './public/js/libs.js')
 

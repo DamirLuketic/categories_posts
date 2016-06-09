@@ -7,3 +7,4 @@
     <h1>Please Register\Login</h1>
 
     @endsection
+

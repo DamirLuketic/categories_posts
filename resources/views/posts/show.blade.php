@@ -22,12 +22,9 @@
 
         <div class="col-lg-4">
 
-                <textarea rows="4" cols="50">
-                    {{$post->content}}
-                </textarea>
+            <?php echo htmlspecialchars_decode($post->content); ?>
 
         </div>
-
 
     </div>
 
@@ -36,6 +33,8 @@
     @endforeach
 
     @endif
+
+
 
 
 <div class="row">

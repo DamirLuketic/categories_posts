@@ -29,7 +29,7 @@
             </div>
 
             <div class="form-group">
-                {!! Form::label('image_path', 'Image:') !!}
+                {!! Form::label('image_path', 'Image (optional):') !!}
                 {!! Form::file('image_path', ['class'=>'form-control']) !!}
             </div>
 
@@ -39,4 +39,11 @@
 
             {!! Form::close() !!}
 
+    <script>
+        CKEDITOR.replace( 'content' );
+    </script>
+
+    @include('includes.errors')
+
     @endsection
+
