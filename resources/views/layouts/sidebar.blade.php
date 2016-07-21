@@ -9,17 +9,16 @@
                 <li>
                     <a href="{{route('posts.create')}}"><i class="fa fa-wrench fa-fw"></i>Create post</a>
                     <ul class="nav nav-second-level">
-                        <li>
-                            <a href="{{route('posts.show', 1)}}">Category 1</a>
-                        </li>
 
-                        <li>
-                            <a href="{{route('posts.show', 2)}}">Category 2</a>
-                        </li>
+                        <?php $categories = \App\Category::all(); ?>
 
-                        <li>
-                            <a href="{{route('posts.show', 3)}}">Category 3</a>
-                        </li>
+                        @foreach($categories as $category)
+
+                            <li>
+                                <a href="{{route('posts.show', $category->id)}}">{{$category->name}}</a>
+                            </li>
+
+                        @endforeach
 
                     </ul>
                     <!-- /.nav-second-level -->
