@@ -1,4 +1,4 @@
-Application for creating post by category and show created a post.
+Application for creating post by category and show created post.
 
 Each post can have an image, and will show in own post group.
 
